@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/10ea1c272f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <script src="JS/javascript.js"></script>
+  </head>
+  <body>
+    <div class="container shadow p-3 mb-5 bg-body rounded">
+      <header class="section-one">
+        <div class="row">
+          <div class="col-10">
+            <form id = "form">
+              <input
+                type="City"
+                class="form-control"
+                placeholder="Enter a city"
+                id = "city"
+              />
+            </form>
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-light">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="section-two">
+        <div class="row">
+          <div class="col-5 Current-weather">
+            <img src="images/partlycloudyday.svg" alt="" class="partlycloudy" />
+          </div>
+          <div class="col-5 current-forcast m-auto">
+            <span class="current-temperature" id ="current">36°</span>
+            <a class="fahrenheit">F</a>
+            <a class="celsius">C</a>
+          </div>
+          <div class="row current-information">
+            <div class="col-1" id="location">Dallas</div>
+            <div class="col-3" id="days">Sunday 12:45 AM</div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="section-three">
+        <span class="description">Partly Cloudy</span>
+        <span class="wind"><i class="fa-solid fa-wind"></i> 11 mph</span>
+        <span class="precipitation"
+          ><i class="fa-solid fa-droplet"></i> 2%</span
+        >
+      </section>
+      <div class="line-break"></div>
+      <section class="section-four">
+        <div class="row">
+          <div class="col">
+            <div>
+              <p class="day">MON</p>
+              <img src="images/haze.svg" alt="" class="weekly-forcast" />
+              <p>7°F</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="day">TUE</p>
+              <img
+                src="images/cloudlightning.svg"
+                alt=""
+                class="weekly-forcast"
+              />
+              <p>7°F</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="day">WED</p>
+              <img
+                src="images/partlycloudyday.svg"
+                alt=""
+                class="weekly-forcast"
+              />
+              <p>7°F</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="day">THU</p>
+              <img src="images/raincloud.svg" alt="" class="weekly-forcast" />
+              <p>7°F</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="day">FRI</p>
+              <img src="images/sun.svg" alt="" class="weekly-forcast" />
+              <p>7°F</p>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <p class="day">SAT</p>
+              <img src="images/haze.svg" alt="" class="weekly-forcast" />
+              <p>7°F</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>Coded by Amanda Guerrero</footer>
+  </body>
+</html>

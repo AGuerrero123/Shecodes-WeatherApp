@@ -1,0 +1,98 @@
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+  font-family: "Roboto Condensed", sans-serif;
+}
+footer {
+  text-align: center;
+}
+.container {
+  background: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
+  width: 880px;
+  height: 600px;
+  margin: 50px auto;
+  padding: 15px 10px;
+  border-radius: 100px;
+  position: relative;
+}
+
+.Current-weather {
+  font-size: 200px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.current-temperature {
+  font-size: 100px;
+  font-weight: bolder;
+  margin-left: 50px;
+}
+
+.current-information {
+  margin-left: 85px;
+  margin-bottom: 20px;
+  font-size: x-large;
+  padding: 0;
+}
+.section-four {
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.btn {
+  cursor: pointer;
+}
+.line-break {
+  border-top: thin solid #0e141b;
+  margin-top: 5px;
+}
+.fahrenheit {
+  top: 100px;
+}
+.fahrenheit,
+.celsius {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+.fahrenheit:hover,
+.celsius:hover {
+  color: #b0c1d4;
+}
+.partlycloudy {
+  display: block;
+  width: 250px;
+}
+.weekly-forcast {
+  width: 50px;
+  margin-left: -10px;
+  margin-bottom: 20px;
+}
+
+.description {
+  position: relative;
+  bottom: 120px;
+  left: 530px;
+  font-size: 30px;
+  padding: 0;
+}
+
+.precipitation,
+.wind {
+  position: relative;
+  bottom: 65px;
+  font-size: 25px;
+}
+.precipitation {
+  left: 225px;
+}
+.wind {
+  left: 510px;
+}

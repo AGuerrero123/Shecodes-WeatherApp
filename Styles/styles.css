@@ -25,10 +25,16 @@ footer {
   margin-top: 20px;
 }
 
-.current-temperature {
+.current-temperature,
+.degree {
   font-size: 100px;
   font-weight: bolder;
+}
+.current-temperature {
   margin-left: 50px;
+}
+.degree {
+  margin-right: 50px;
 }
 
 .current-information {

@@ -27,25 +27,32 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="Styles/styles.css" />
-    <script src="JS/javascript.js"></script>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
+
   <body>
     <div class="container shadow p-3 mb-5 bg-body rounded">
       <header class="section-one">
         <div class="row">
-          <div class="col-10">
-            <form id = "form">
+          <div class="col-7">
+            <form id="form">
               <input
                 type="City"
                 class="form-control"
                 placeholder="Enter a city"
-                id = "city"
+                id="city"
               />
             </form>
           </div>
           <div class="col-2">
-            <button type="submit" class="btn btn-light">
+            <button type="submit" class="btn btn-light" id="search">
               <i class="fa-solid fa-magnifying-glass"></i> Search
+            </button>
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn btn-success" id="current-location">
+              Current Location
             </button>
           </div>
         </div>
@@ -56,22 +63,22 @@
             <img src="images/partlycloudyday.svg" alt="" class="partlycloudy" />
           </div>
           <div class="col-5 current-forcast m-auto">
-            <span class="current-temperature" id ="current">36°</span>
-            <a class="fahrenheit">F</a>
-            <a class="celsius">C</a>
+            <span class="current-temperature" id="temp">36</span>
+            <span class="degree">°</span>
+            <a class="fahrenheit" id="fahrenheit">F</a>
+            <a class="celsius" id="celsius">C</a>
           </div>
           <div class="row current-information">
-            <div class="col-1" id="location">Dallas</div>
-            <div class="col-3" id="days">Sunday 12:45 AM</div>
-            
+            <div class="col-2" id="location">Dallas</div>
+            <div class="col-2" id="days">Sunday 12:45 AM</div>
           </div>
         </div>
       </section>
       <section class="section-three">
-        <span class="description">Partly Cloudy</span>
-        <span class="wind"><i class="fa-solid fa-wind"></i> 11 mph</span>
+        <span class="description" id="description">Partly Cloudy</span>
+        <span class="wind">Wind: <span id="wind"> 11 </span> Km/h</span>
         <span class="precipitation"
-          ><i class="fa-solid fa-droplet"></i> 2%</span
+          >Humidity: <span id="humidity">2</span>%</span
         >
       </section>
       <div class="line-break"></div>
@@ -132,4 +139,5 @@
     </div>
     <footer>Coded by Amanda Guerrero</footer>
   </body>
+  <script src="JS/javascript.js"></script>
 </html>
